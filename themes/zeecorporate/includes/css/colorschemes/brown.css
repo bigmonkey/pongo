@@ -1,0 +1,24 @@
+a, a:link, a:visited{
+	color: #a53a00;
+}
+#sidebar ul li h2 {
+	color: #a53a00;
+}
+#navi ul li.current_page_item a, #navi ul li.current-cat a, #navi ul li.current-menu-item a{
+	color: #a53a00;
+}
+.post h2, .attachment h2, .post h2 a:link, .post h2 a:visited {
+	color: #a53a00;
+}
+#slideshow .post h2 a{  
+    color: #a53a00;
+}
+.comment-author .fn, .comment-reply-link {
+	color: #a53a00 !important;
+}
+.wp-pagenavi .current {
+    color: #a53a00;
+}
+#slide_keys a:link, #slide_keys a:visited {
+	color: #a53a00 !important;
+}
