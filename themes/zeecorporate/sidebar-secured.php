@@ -1,7 +1,7 @@
 <div id="sidebar">
 
-<IFRAME STYLE="" SCROLLING="no" FRAMEBORDER="0" SRC="http://tools.thepaydayhound.com/blogbars/secured" WIDTH="185" HEIGHT="250">
-[Your user agent does not support frames or is currently configured not to display frames. However, you may visit <A href="http://tools.thepaydayhound.com/blogbars/secured">the related document.</A>]
+<IFRAME STYLE="" SCROLLING="no" FRAMEBORDER="0" SRC="/blogbars/secured" WIDTH="185" HEIGHT="250">
+[Your user agent does not support frames or is currently configured not to display frames. However, you may visit <A href="/blogbars/secured">the related document.</A>]
 </IFRAME>
 
 <ul>

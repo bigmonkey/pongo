@@ -15,43 +15,23 @@
 <![endif]-->
 
 
-<script type="text/javascript" src="http://resources.thepaydayhound.com/assets/application-ad0960f1326cf019ad89519dba014ac7.js"></script>
+<?php $base_url = "http://www.thepaydayhound.com"; ?>
+<?php $style = file_get_contents($base_url . "/jstyle"); ?>
+<?php $style = str_replace("/assets", $base_url . "/assets", $style); ?>
+<?php echo $style; ?>
+
 
 </head>
 
 <body <?php body_class(); ?>>
 
-	<div id="mainHeaderOutter">
-		<div id="mainHeader">
-			<div id="logo"><a href="http://thepaydayhound.com"><img alt="logo" src="/wp-content/uploads/2012/06/thepaydayhound-logo.png" /></a></div>
+<?php $head = file_get_contents($base_url . "/header"); ?>
+<?php $head = str_replace("href=\"/", "href=\"" . $base_url . "/", $head); ?>
+<?php $head = str_replace("src=\"/assets", "src=\"" . $base_url . "/assets", $head); ?>
+<?php echo $head; ?>
 
-			<div id="socialmediaicons">
-				<a href="/feed" title="The Payday Hound Feed"><img alt="RSS Feed" src="/wp-content/uploads/2012/06/rss.png" /></a>
-				<a href="http://www.facebook.com/thepaydayhound" title="The Payday Hound Facebook Page"><img alt="Facebook" src="/wp-content/uploads/2012/06/facebook.png" /></a>
-				<a href="http://www.twitter.com/thepaydayhound" title="The Payday Hound Twitter Page"><img alt="Twitter" src="/wp-content/uploads/2012/06/twitter.png" /></a>
-				<a href="https://plus.google.com/114318301384219988110" title="The Payday Hound Google Page"><img alt="Google +" src="/wp-content/uploads/2012/06/googleplus.png" /></a>
-			</div>
-
-			<div id="nav">
-
-			<div id = "chromemenu">
-				<ul>
-					<li><a href="http://www.thepaydayhound.com">Home</a></li>
-					<li><a href="https://www.thepaydayhound.com/payday-loan-apply">Apply Now</a></li>
-				    	<li><a href="http://tools.thepaydayhound.com/payday-loans">Payday Loans</a></li>
-				    	<li><a href="http://tools.thepaydayhound.com/installment-loans">Installment Loans</a></li>
-					<li><a href="http://www.thepaydayhound.com/resources" >Resources</a></li>
-				</ul>
-			</div>	
-
-
-		
-			</div>
-		</div>
-
-		<?php if( get_header_image() != '' ) : ?>
-		<div id="custom_header">
-		<img src="<?php echo get_header_image(); ?>" />
-		</div>
-		<?php endif; ?>
-	</div>
+<?php if( get_header_image() != '' ) : ?>
+<div id="custom_header">
+<img src="<?php echo get_header_image(); ?>" />
+</div>
+<?php endif; ?>

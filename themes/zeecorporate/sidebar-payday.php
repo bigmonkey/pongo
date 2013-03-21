@@ -1,6 +1,6 @@
 <div id="sidebar">
-<IFRAME STYLE="" SCROLLING="no" FRAMEBORDER="0" SRC="http://tools.thepaydayhound.com/blogbars/payday" WIDTH="185" HEIGHT="430">
-[Your user agent does not support frames or is currently configured not to display frames. However, you may visit <A href="http://tools.thepaydayhound.com/blogbars/payday">the related document.</A>]
+<IFRAME STYLE="" SCROLLING="no" FRAMEBORDER="0" SRC="/blogbars/payday" WIDTH="185" HEIGHT="430">
+[Your user agent does not support frames or is currently configured not to display frames. However, you may visit <A href="/blogbars/payday">the related document.</A>]
 </IFRAME>
 <ul>
 	<?php wp_list_categories('title_li=<h2>Learn</h2>'); ?>
